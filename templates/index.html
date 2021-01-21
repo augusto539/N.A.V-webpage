@@ -1,64 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="img/icon.png" sizes="32x32">
-        <link rel="stylesheet" href="static/index.css">
+{% extends "layout.html" %}
 
-        <title> NAV </title>
+{% block head %}
 
-    </head>
+    <link rel="stylesheet" href="static/index.css">
 
-    <body>
-        <div class="nav_content">
-           <img src="img/nav solo cabeza.png" alt="logo">
+{% endblock %}
+        
+{% block content %}
 
-            <ul>
-                <li><a href="">Models</a></li>
-                <li><a href="">Cart</a></li>
-            </ul>
-            <a href="" class="log_in">Log in</a>
+    <div class="content"> 
+        <p>
+            Paper wallets for all the humans <br>
+            not all the cost for the planet
+        </p>
+                
+        <img src="img/wallet.png" class="wallet">
+                                    
+    </div>
+
+    <div class="footer">
+        <div class="social_media">
+            <div class="title"><h4>our social media</h4></div>
+            <a href="" class="instagram"><img src="" alt="instagram"></a>
+            <div class="fecebook"><img src="" alt="facebook"></div>
+            <div class="twitter"><img src="" alt="twitter"></div>
         </div>
-
-
-        <div class="content"> 
+        <div class="about_us">
+            <h4> about us </h4>
             <p>
-                Paper wallets for all the humans <br>
-                not all the cost for the planet
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Vero quis illum error ab sapiente debitis corporis fugit dolorum <br>
+                cum quidem modi dolorem consectetur nulla deleniti quas eligendi, <br>
+                est repudiandae reprehenderit! <br>
             </p>
-            
-            <img src="img/wallet.png" class="wallet">
-                       
-            
         </div>
-
-        <div class="footer">
-            <div class="social_media">
-                <div class="title"><h4>our social media</h4></div>
-                <a href="" class="instagram"><img src="" alt="instagram"></a>
-                <div class="fecebook"><img src="" alt="facebook"></div>
-                <div class="twitter"><img src="" alt="twitter"></div>
-            </div>
-            <div class="about_us">
-                <h4> about us </h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Vero quis illum error ab sapiente debitis corporis fugit dolorum <br>
-                    cum quidem modi dolorem consectetur nulla deleniti quas eligendi, <br>
-                    est repudiandae reprehenderit! <br>
-                </p>
-            </div>
-            <div class="our_wallets">
-                <h4> our wallets </h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Vero quis illum error ab sapiente debitis corporis fugit dolorum <br>
-                    cum quidem modi dolorem consectetur nulla deleniti quas eligendi, <br>
-                    est repudiandae reprehenderit! <br>
-                </p>
-            </div>
+        <div class="our_wallets">
+            <h4> our wallets </h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Vero quis illum error ab sapiente debitis corporis fugit dolorum <br>
+                cum quidem modi dolorem consectetur nulla deleniti quas eligendi, <br>
+                est repudiandae reprehenderit! <br>
+            </p>
         </div>
+    </div>
 
-    </body>
-</html>
+{% endblock %}
