@@ -1,12 +1,3 @@
-function wallets_list(id) {
-    console.log(id);
-
-    let el = document.getElementsByClassName('featured_wallet');
-
-    document.getElementById("main_img").src = `img/wallet_${id}.png`;
-}
-
-
 var id = null;
 var velocity = 30;
 function myMove(ID) {
@@ -21,13 +12,23 @@ function myMove(ID) {
         pos = pos - velocity;  
         elem.style.left = pos + 'px';
       }
-      console.log(pos)
     }
 
 
     setTimeout(() => { kk(ID); }, 500);
     //setTimeout(kk, 500);
+
+    let ids = [1,2,3,4,5,6,7];
+
+    document.getElementById(ID).className = "active"
+
+    delete ids[ID-1];
+
+    ids.forEach(element => {
+      document.getElementById(element).className = "inactive"
+    });
   
+    console.log(ids)
 }
 
 
@@ -46,6 +47,5 @@ function kk(ID) {
         pos = pos - velocity;  
         elem.style.left = pos + 'px';
         }
-        console.log(pos)
     }
 }
