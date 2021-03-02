@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <script>
 
@@ -45,8 +46,8 @@
     </header>
 
     <div class="content">
-        <div class="featured_wallet">
-            <img src="img/wallet.png" alt="">
+        <div class="featured_wallet" id="featured_wallet">
+            <img src="img/wallet.png" alt="this is a wallet" id="main_img">
             <div class="text">
                 <h1> National Post Ofice </h1>
                 <p> esta increible billetera esta inspirada en las cartas <br> utilisadas en el servicio postal de EEUU </p>
@@ -61,15 +62,15 @@
                     </div>
                 </div>
             </div>
-            <div class="wallets_list">
-                <img src="img/wallet.png" alt="">
-                <img src="img/wallet.png" alt="">
-                <img src="img/wallet.png" alt="">
-                <img src="img/wallet.png" alt="">
-                <img src="img/wallet.png" alt="">
-                <img src="img/wallet.png" alt="">
-                <img src="img/wallet.png" alt="">
-            </div>
+        </div>
+        <div class="wallets_list">
+            <button type="button" id="1" onclick="myMove(id)"> <img src="img/wallet_1.png" alt=""> </button>
+            <button type="button" id="2" onclick="myMove(id)"> <img src="img/wallet_2.png" alt=""> </button>
+            <button type="button" id="3" onclick="myMove(id)"> <img src="img/wallet_3.png" alt=""> </button>
+            <button type="button" id="4" onclick="myMove(id)"> <img src="img/wallet_4.png" alt=""> </button>
+            <button type="button" id="5" onclick="myMove(id)"> <img src="img/wallet_5.png" alt=""> </button>
+            <button type="button" id="6" onclick="myMove(id)"> <img src="img/wallet_6.png" alt=""> </button>
+            <button type="button" id="7" onclick="myMove(id)"> <img src="img/wallet_7.png" alt=""> </button>
         </div>
     </div>
 
