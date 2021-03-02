@@ -1,64 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="img/icon.png" sizes="32x32">
-        <link rel="stylesheet" href="Styles/index.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title> NAV </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    </head>
+    <link rel="stylesheet" href="style.css">
 
-    <body>
-        <div class="nav_content">
-           <img src="img/nav solo cabeza.png" alt="logo">
+    <script>
 
+        var link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        console.log(window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches == true){
+            link.href = 'img/dark theme icon.png';
+        } else {
+            link.href = 'img/light theme icon.png';
+        }
+
+    </script>
+
+    <title> NAV </title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/cabeza blanca.png" alt="" class="logo">
             <ul>
-                <li><a href="">Models</a></li>
-                <li><a href="">Cart</a></li>
+                <li><a href=""> home </a></li>
+                <li><a href=""> models </a></li>
+                <li><a href=""> about us </a></li>
             </ul>
-            <a href="" class="log_in">Log in</a>
-        </div>
+        </nav>
+    </header>
 
-
-        <div class="content"> 
-            <p>
-                Paper wallets for all the humans <br>
-                not all the cost for the planet
-            </p>
-            
-            <img src="img/wallet.png" class="wallet">
-                       
-            
-        </div>
-
-        <div class="footer">
-            <div class="social_media">
-                <div class="title"><h4>our social media</h4></div>
-                <a href="" class="instagram"><img src="" alt="instagram"></a>
-                <div class="fecebook"><img src="" alt="facebook"></div>
-                <div class="twitter"><img src="" alt="twitter"></div>
+    <div class="content">
+        <div class="featured_wallet">
+            <img src="img/wallet.png" alt="">
+            <div class="text">
+                <h1> National Post Ofice </h1>
+                <p> esta increible billetera esta inspirada en las cartas <br> utilisadas en el servicio postal de EEUU </p>
+                <div class="interesting_data">
+                    <div class="card_slots">
+                        <img src="/img/card.png" alt="">
+                        <h2> four card slots </h2>
+                    </div>
+                    <div class="nav_original">
+                        <img src="/img/cabeza negra.png" alt="">
+                        <h2> NAV original </h2>
+                    </div>
+                </div>
             </div>
-            <div class="about_us">
-                <h4> about us </h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Vero quis illum error ab sapiente debitis corporis fugit dolorum <br>
-                    cum quidem modi dolorem consectetur nulla deleniti quas eligendi, <br>
-                    est repudiandae reprehenderit! <br>
-                </p>
-            </div>
-            <div class="our_wallets">
-                <h4> our wallets </h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Vero quis illum error ab sapiente debitis corporis fugit dolorum <br>
-                    cum quidem modi dolorem consectetur nulla deleniti quas eligendi, <br>
-                    est repudiandae reprehenderit! <br>
-                </p>
+            <div class="wallets_list">
+                <img src="img/wallet.png" alt="">
+                <img src="img/wallet.png" alt="">
+                <img src="img/wallet.png" alt="">
+                <img src="img/wallet.png" alt="">
+                <img src="img/wallet.png" alt="">
+                <img src="img/wallet.png" alt="">
+                <img src="img/wallet.png" alt="">
             </div>
         </div>
+    </div>
 
-    </body>
+    <footer>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://www.instagram.com/_augusto_11/"><img src="img/instagram.png" alt=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>
