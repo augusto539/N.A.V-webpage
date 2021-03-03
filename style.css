@@ -168,7 +168,6 @@ footer img{
 @media only screen and (max-width: 600px) {
     body{
         background-image: url('img/home_bg_cel.svg');
-        background-size: contain;
     }
     nav img{
         height: 60px;
