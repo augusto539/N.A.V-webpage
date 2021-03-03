@@ -178,6 +178,7 @@ footer img{
     }
     .content{
         grid-template-rows: 60% auto;
+        margin-left: 6%;
     }
 
     .featured_wallet{
@@ -191,8 +192,8 @@ footer img{
         grid-row: 2;
         height: 320px;
 
-        margin-left: 5%;
-        margin-top: 20%;
+        margin-left: -1.5%;
+        margin-top: 22%;
     }
 
     .featured_wallet .text{
