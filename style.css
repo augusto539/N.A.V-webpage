@@ -166,6 +166,9 @@ footer img{
 }
 
 @media only screen and (max-width: 600px) {
+    body{
+        background-image: url('img/home_bg_cel.svg');
+    }
     nav img{
         height: 60px;
         margin-top: 5px;
@@ -222,5 +225,6 @@ footer img{
     }
     .wallets_list button{
         margin-left: 0%;
+    }
     
 }

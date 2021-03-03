@@ -1,24 +1,32 @@
 var id = null;
+var whidth = 0;
+var velocity = 0;
+var wait = 0;
 
-if (screen.width < 900){
-  var velocity = 5;
+if (screen.width < 1800){
+  whidth = 400;
+  velocity = 20;
+  wait = 500;
 } else {
-  var velocity = 30
+  whidth = 1800;
+  velocity = 30;
+  wait = 100;
 }
+
+
 function myMove(ID) {
     var elem = document.getElementById("featured_wallet"); 
     var pos = 0;
     clearInterval(id);
     id = setInterval(frame, 1);
     function frame() {
-      if (pos == screen.width) {
+      if (pos == -whidth) {
         clearInterval(id);
       } else {
         pos = pos - velocity;  
         elem.style.left = pos + 'px';
       }
     }
-
 
     setTimeout(() => { kk(ID); }, 500);
     //setTimeout(kk, 500);
@@ -40,7 +48,7 @@ function kk(ID) {
     document.getElementById("main_img").src = `img/wallet_${ID}.png`
 
     var elem = document.getElementById("featured_wallet");   
-    var pos = screen.width;
+    var pos = whidth;
     clearInterval(id);
     id = setInterval(frame, 1);
     function frame() {
@@ -52,3 +60,6 @@ function kk(ID) {
         }
     }
 }
+
+
+
