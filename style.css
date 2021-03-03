@@ -75,7 +75,6 @@ nav ul li a:hover{
 
 .featured_wallet img{
     grid-column: 1;
-
     margin-left: 24%;
 }
 
@@ -166,17 +165,55 @@ footer img{
     width: auto;
 }
 
-/*
-.featured_wallet{
-    position: relative;
-    animation-name: example;
-    animation-duration: 1s;
-    animation-delay: 0s;
-}
+@media only screen and (max-width: 600px) {
+    nav ul li a{
+        font-size: 1.5rem;
 
+        margin-left: 10px;
+        padding: 0px;
+    }
+    .content{
+        grid-template-rows: 60% auto;
+    }
 
-@keyframes example {
-    0%   {background-color:rgba(255, 255, 255, 0); left:900px;}
-    100%  {background-color:rgba(255, 255, 255, 0); left:0px;}
+    .featured_wallet{
+        height: 450px;
+        grid-template-columns: auto 0%;
+        grid-template-rows: 20% 50%;
+    }
+
+    .featured_wallet img{
+        grid-column: 1;
+        grid-row: 2;
+        height: 320px;
+
+        margin-left: 5%;
+        margin-top: 20%;
+    }
+
+    .featured_wallet .text{
+        grid-column: 1;
+        grid-row: 1;
+
+        margin-left: 5%;
+    }
+    .text h1{
+        font-size: 3rem;
+    }
+    .text p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .featured_wallet .interesting_data{
+        display: none;
+    }
+
+    .wallets_list{
+        margin-top: 30%;
+    }
+
+    .wallets_list img{
+        height: 80px;
+    }
 }
-*/
