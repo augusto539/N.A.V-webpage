@@ -1,6 +1,6 @@
 var id = null;
 
-if (screen.width < 800){
+if (screen.width < 900){
   var velocity = 5;
 } else {
   var velocity = 30
@@ -32,8 +32,6 @@ function myMove(ID) {
     ids.forEach(element => {
       document.getElementById(element).className = "inactive"
     });
-  
-    console.log(ids)
 }
 
 
