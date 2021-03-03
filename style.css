@@ -166,9 +166,6 @@ footer img{
 }
 
 @media only screen and (max-width: 600px) {
-    body{
-        background-image: url('img/home_bg_cel.svg');
-    }
     nav img{
         height: 60px;
         margin-top: 5px;
@@ -227,4 +224,15 @@ footer img{
         margin-left: 0%;
     }
     
+}
+
+@media only screen and (max-width: 414px){
+    body{
+        background-image: url('img/home_bg_cel_414.svg');
+    }
+}
+@media only screen and (max-width: 375px){
+    body{
+        background-image: url('img/home_bg_cel_375.svg');
+    }
 }
