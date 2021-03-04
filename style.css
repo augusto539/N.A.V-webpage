@@ -62,26 +62,34 @@ nav ul li a:hover{
     position: relative;
     display: grid;
     grid-template-rows: 75% auto;
+    grid-template-columns: 5% 90% 5%;
+}
+
+#left{
+    grid-column: 1;
+}
+#rigth{
+    grid-column: 3;
 }
 
 .featured_wallet{
     grid-row: 1;
+    grid-column: 2/3;
     position: absolute;
     height: 50%;
-    margin-top: 3%;
+    width: 100%;
+    margin-top: 3.5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .featured_wallet img{
     grid-column: 1;
-    margin-left: 24%;
+    margin-left: 9%;
 }
 
 .featured_wallet .text{
     grid-column: 2;
-
-    margin-left: 25%;
 }
 
 .text h1{
@@ -95,8 +103,7 @@ nav ul li a:hover{
 
 .featured_wallet .interesting_data{
     display: grid;
-    margin-right: 30%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 30% 70%;
 }
 .interesting_data .card_slots{
     grid-column: 1;
@@ -116,12 +123,13 @@ nav ul li a:hover{
     width: auto;
 }
 .wallets_list{
-    margin-top: 1.5%;
+    grid-column: 1/4;
+    margin-top: 3%;
     grid-row: 2;
 }
 
 .wallets_list img{
-    height: 180px;
+    height: 150px;
     width: auto;
 
     margin: 0;
@@ -165,6 +173,55 @@ footer img{
     width: auto;
 }
 
+button {
+    
+    background: transparent;
+    border: 0;
+    outline:0;
+  }
+
+svg {
+    padding: 5px;
+}
+  
+.arrow {
+    cursor: pointer;
+    width: 70px;
+    height: 90px;
+}
+  
+.left {
+    left: 42%;
+}
+  
+.right {
+    left: 58%;
+}
+  
+.left:hover polyline{
+    stroke-width: 3;
+}
+  
+.left:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+}                                                                     
+  
+.right:hover polyline{
+    stroke-width: 3;
+}
+  
+.right:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+}
+  
+polyline {
+    transition: all 250ms ease-in-out;
+}
+
+
+
 @media only screen and (max-width: 600px) {
     nav img{
         height: 60px;
@@ -178,7 +235,14 @@ footer img{
     }
     .content{
         grid-template-rows: 60% auto;
-        margin-left: 6%;
+    }
+    #left{
+        grid-column: 1;
+        grid-row: 1/4;
+    }
+    #rigth{
+        grid-column: 3;
+        grid-row: 1/4;
     }
 
     .featured_wallet{
@@ -215,6 +279,7 @@ footer img{
     }
 
     .wallets_list{
+        grid-row: 2/3;
         margin-top: 40%;
     }
 
@@ -222,7 +287,11 @@ footer img{
         height: 70px;
     }
     .wallets_list button{
-        margin-left: 0%;
+        margin-left: 2.6%;
+    }
+
+    svg{
+        display: none;
     }
     
 }
