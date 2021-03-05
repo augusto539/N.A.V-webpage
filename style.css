@@ -235,6 +235,12 @@ polyline {
     }
     .content{
         grid-template-rows: 60% auto;
+        grid-template-columns: 7% auto 7%;
+
+    }
+    #left, #rigth{
+        margin: 0;
+        padding: 0;
     }
     #left{
         grid-column: 1;
