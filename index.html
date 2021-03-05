@@ -8,85 +8,87 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-    <script>
-
-        var link = document.querySelector("link[rel~='icon']");
-        if (!link) {
-            link = document.createElement('link');
-            link.rel = 'icon';
-            document.getElementsByTagName('head')[0].appendChild(link);
-        }
-
-        console.log(window.matchMedia('(prefers-color-scheme: dark)').matches);
-
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches == true){
-            link.href = 'img/dark theme icon.png';
-        } else {
-            link.href = 'img/light theme icon.png';
-        }
-
-    </script>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <title> NAV </title>
-
+    
 </head>
+<script>
+
+    var link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+        link = document.createElement('link');
+        link.rel = 'icon';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches == true){
+        link.href = 'img/dark theme icon.png';
+    } else {
+        link.href = 'img/light theme icon.png';
+    }
+
+</script>
 <body>
     <header>
         <nav>
-            <img src="img/cabeza blanca.png" alt="" class="logo">
+            <a href="index.html"> <img src="img/cabeza blanca.png" alt="" class="logo"> </a>
             <ul>
-                <li><a href=""> home </a></li>
-                <li><a href=""> models </a></li>
+                <li><a href="index.html"> home </a></li>
+                <li><a href="models.html"> models </a></li>
                 <li><a href=""> about us </a></li>
             </ul>
         </nav>
     </header>
-
     <div class="content">
-        <button id="left" onclick="buttons('left-arrow')">
-            <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve" class="arrow left">
-                <polyline fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
-                45.63,75.8 0.375,38.087 45.63,0.375 "/>
-            </svg> 
-        </button>
-        <div class="featured_wallet" id="featured_wallet">
-            <img src="img/wallet_1.png" alt="this is a wallet" id="main_img">
-            <div class="text">
-                <h1> National Post Ofice </h1>
-                <p> esta increible billetera esta inspirada en las cartas <br> utilisadas en el servicio postal de EEUU </p>
-                <div class="interesting_data">
-                    <div class="card_slots">
-                        <img src="img/card.png" alt="">
-                        <h2> four card slots </h2>
-                    </div>
-                    <div class="nav_original">
-                        <img src="img/cabeza negra.png" alt="">
-                        <h2> NAV original </h2>
-                    </div>
-                </div>
+        <div class="logo_container">
+            <img class="logo" src="img/nav.png" alt="">  
+        </div>
+        <div class="line_1">
+            <div class="up">
+                <img class="bg_imgs" src="img/home/tbhc.jpg" alt="">
+                <img class="bg_imgs" src="img/home/flores.jpg" alt="">
             </div>
         </div>
-        <button id="rigth" onclick="buttons('right-arrow')"> 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve" class="arrow right">
-                <polyline fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
-                0.375,0.375 45.63,38.087 0.375,75.8 "/>
-            </svg>
-        </button>
-        <div class="wallets_list">
-            <button type="button" id="1" onclick="myMove(id)"> <img src="img/wallet_1.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="2" onclick="myMove(id)"> <img src="img/wallet_2.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="3" onclick="myMove(id)"> <img src="img/wallet_3.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="4" onclick="myMove(id)"> <img src="img/wallet_4.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="5" onclick="myMove(id)"> <img src="img/wallet_5.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="6" onclick="myMove(id)"> <img src="img/wallet_6.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="7" onclick="myMove(id)"> <img src="img/wallet_7.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="8" onclick="myMove(id)"> <img src="img/wallet_8.png" alt="" class="wallets_list_img"> </button>
+        <div class="line_2">
+            <div class="down">
+                <img class="bg_imgs" src="img/home/billetera marti comprimida.jpg" alt="">
+                <img class="bg_imgs" src="img/home/leaves.jpg" alt="">
+                <img class="bg_imgs" src="img/home/nachi.jpg" alt="">
+            </div>
+        </div>
+        <div class="line_3">
+            <div class="up">
+                <img class="bg_imgs" src="img/home/one in a million.jpg" alt="">
+                <img class="bg_imgs" src="img/home/bananas.jpg" alt="">
+                <img class="bg_imgs" src="img/home/use les energy.jpg" alt="">
+                <img class="bg_imgs" src="img/home/squelis.jpg" alt="">
+            </div>
+        </div>
+        <div class="line_4">
+            <div class="down_2">
+                <img class="bg_imgs" src="img/home/rosa.jpg" alt="">
+                <img class="bg_imgs" src="img/home/leves_2.jpg" alt="">
+                <img class="bg_imgs" src="img/home/ocean keepers.jpg" alt="">
+                <img class="bg_imgs" src="img/home/mountains.jpg" alt="">
+            </div>
+        </div>
+        <div class="line_5">
+            <div class="up">
+                <img class="bg_imgs" src="img/home/gran ola.jpg" alt="">
+                <img class="bg_imgs" src="img/home/billetera marti comprimida.jpg" alt="">
+                <img class="bg_imgs" src="img/home/tbhc.jpg" alt="">
+            </div>
+        </div>
+        <div class="line_6">
+            <div class="down">
+                <img class="bg_imgs" src="img/home/fire wach.jpg" alt="">
+                <img class="bg_imgs" src="img/home/do i wanna know.jpg" alt="">
+            </div>
         </div>
     </div>
-
     <footer>
         <div class="social_media">
             <ul>
@@ -97,7 +99,4 @@
         </div>
     </footer>
 </body>
-<script>
-    window.onload = myMove(1)
-</script>
 </html>

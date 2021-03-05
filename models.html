@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/models.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="script.js"></script>
+
+    <script>
+
+        var link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches == true){
+            link.href = 'img/dark theme icon.png';
+        } else {
+            link.href = 'img/light theme icon.png';
+        }
+
+    </script>
+
+    <title> NAV - models </title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> <img src="img/cabeza blanca.png" alt="" class="logo"> </a>
+            <ul>
+                <li><a href="index.html"> home </a></li>
+                <li><a href="models.html"> models </a></li>
+                <li><a href=""> about us </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <button id="left" onclick="buttons('left-arrow')">
+            <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve" class="arrow left">
+                <polyline fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                45.63,75.8 0.375,38.087 45.63,0.375 "/>
+            </svg> 
+        </button>
+        <div class="featured_wallet" id="featured_wallet">
+            <img src="img/wallet_1.png" alt="this is a wallet" id="main_img">
+            <div class="text">
+                <h1> National Post Ofice </h1>
+                <p> esta increible billetera esta inspirada en las cartas <br> utilisadas en el servicio postal de EEUU </p>
+                <div class="interesting_data">
+                    <div class="card_slots">
+                        <img src="img/card.png" alt="">
+                        <h2> four card slots </h2>
+                    </div>
+                    <div class="nav_original">
+                        <img src="img/cabeza negra.png" alt="">
+                        <h2> NAV original </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="rigth" onclick="buttons('right-arrow')"> 
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve" class="arrow right">
+                <polyline fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                0.375,0.375 45.63,38.087 0.375,75.8 "/>
+            </svg>
+        </button>
+        <div class="wallets_list">
+            <button type="button" id="1" onclick="myMove(id)"> <img src="img/wallet_1.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="2" onclick="myMove(id)"> <img src="img/wallet_2.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="3" onclick="myMove(id)"> <img src="img/wallet_3.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="4" onclick="myMove(id)"> <img src="img/wallet_4.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="5" onclick="myMove(id)"> <img src="img/wallet_5.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="6" onclick="myMove(id)"> <img src="img/wallet_6.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="7" onclick="myMove(id)"> <img src="img/wallet_7.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="8" onclick="myMove(id)"> <img src="img/wallet_8.png" alt="" class="wallets_list_img"> </button>
+        </div>
+    </div>
+    <footer>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://www.instagram.com/_augusto_11/"><img src="img/instagram.png" alt=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+    let ramdom = Math.floor((Math.random() * (8 - 1 + 1)) + 1);
+    window.onload = myMove(ramdom)
+</script>
+</html>

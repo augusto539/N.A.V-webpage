@@ -25,9 +25,6 @@ function buttons(button_type){
 
     one_more = ids.indexOf('#') + 2;
 
-    console.log(one_more)
-
- 
     if (one_more == 9){
       one_more = ids[0]
     }
