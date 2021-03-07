@@ -79,7 +79,7 @@ function myMove(ID) {
 
 
 function kk(ID) {
-    document.getElementById("main_img").src = `img/wallet_${ID}.png`
+    document.getElementById("main_img").src = `../img/wallet_${ID}.png`
 
     var elem = document.getElementById("featured_wallet");   
     var pos = whidth;

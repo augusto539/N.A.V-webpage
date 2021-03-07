@@ -109,6 +109,10 @@ a{
 
 @media only screen and (max-width: 600px){
 
+    .bg_imgs{
+        filter: blur(0px);
+    }
+
     .line_1, .line_2, .line_3, .line_4, .line_5, .line_6{
         height: 100px;
     }
@@ -152,20 +156,37 @@ a{
     }
 
     .up img{
-        animation-duration: 15s;
+        animation-duration: 0s;
     }
     .down img{
-        animation-duration: 15s;
+        animation-duration: 0s;
     }
+}
 
-
-    @keyframes up {
-        0%   {left:0px}
-        100% {left:-300px}
+@media only screen and (max-width: 500px){
+    .line_1{
+        top: 150px;
+        right: -300px;
     }
-    @keyframes down {
-        0%   {left:-300px}
-        100% {left:0px}
+    .line_2{
+        top: 290px;
+        right: -426px;
+    }
+    .line_3{
+        top: 480px;
+        left: -150px;
+    }
+    .line_4{
+        top: 490px;
+        left: -300px;
+    }
+    .line_5{
+        bottom: 30px;
+        right: -400px;
+    }
+    .line_6{
+        bottom: -760px;
+        left: -400px;
     }
 }
 
@@ -175,23 +196,22 @@ a{
         right: -300px;
     }
     .line_2{
-        top: 368px;
-        right: -550px;
-    }
-    .line_3{
-        top: 510px;
-        left: -150px;
-    }
-    .line_4{
-        top: 590px;
-        left: -100px;
-    }
-    .line_5{
-        bottom: -10px;
+        top: 300px;
         right: -450px;
     }
-    .line_6{
-        bottom: -860px;
-        right: -3000px;
+    .line_3{
+        top: 480px;
+        left: -150px;
+    }  
+}
+
+@media only screen and (max-width: 375px){
+    .line_2{
+        top: 320px;
+        right: -500px;
+    }
+    .line_5{
+        bottom: 8px;
+        right: -500px;
     }
 }
