@@ -83,19 +83,20 @@
         left: -206px;
     }
     .front .heading{
-        margin-top: -10%;
+        margin-top: -7%;
     
         font-size: 0.6rem;
     }
     .front .info{
         font-size: 0.5rem;
+        margin-top: -6%;
     }
     .front .info img{
         height: 40px;
         margin-left: 5%;
     }
     .footer{
-        margin-top: 4.5%;
+        margin-top: 7%;
         height: 64px;
     }
 }

@@ -109,10 +109,6 @@ a{
 
 @media only screen and (max-width: 600px){
 
-    .bg_imgs{
-        filter: blur(0px);
-    }
-
     .line_1, .line_2, .line_3, .line_4, .line_5, .line_6{
         height: 100px;
     }
@@ -202,16 +198,20 @@ a{
     .line_3{
         top: 480px;
         left: -150px;
-    }  
+    }
+    .line_5{
+        top: 770px;
+        right: -600px;
+    }
+    .line_6{
+        top: 1500px;
+        left: -400px;
+    }
 }
 
 @media only screen and (max-width: 375px){
     .line_2{
         top: 320px;
-        right: -500px;
-    }
-    .line_5{
-        bottom: 8px;
         right: -500px;
     }
 }
