@@ -1,18 +1,7 @@
 html, body{
-    margin: 0;
-    padding: 0;
-
-    height: 100%;
-
-    font-family: 'Bebas Neue', cursive;
-
     overflow-x: hidden; 
 }
 
-a{
-    color: white;
-    text-decoration: none;
-}
 body{
     background-image: url('../img/home_bg.svg');
     background-size: cover;

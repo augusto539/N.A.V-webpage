@@ -1,23 +1,14 @@
 html, body{
-    margin: 0;
-    padding: 0;
 
-    height: 100%;
-
-    font-family: 'Bebas Neue', cursive;
-
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-a{
-    color: white;
-    text-decoration: none;
+    overflow: hidden;
 }
 
 .content{
     height: 87%;
+    overflow: hidden;
 }
+
+
 .line_1, .line_2, .line_3, .line_4, .line_5, .line_6{
     transform: rotate(30deg);
 
@@ -88,7 +79,7 @@ a{
 
 .content .logo{
     position: relative;
-    z-index: 2;
+    z-index: 3;
 
     height: 450px;
 

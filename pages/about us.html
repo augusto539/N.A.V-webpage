@@ -5,11 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/basics.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/about_us.css">
+
+    <script>
+
+        var link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches == true){
+            link.href = '../img/dark theme icon.png';
+        } else {
+            link.href = '../img/light theme icon.png';
+        }
+
+    </script>
+
+    <title> NAV - about us</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="../index.html"> <img src="../img/cabeza blanca.png" alt="" class="logo"> </a>
+            <ul>
+                <li><a href="../index.html"> home </a></li>
+                <li><a href="models.html"> models </a></li>
+                <li><a href="about us.html"> about us </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section class="1">
+            <h1> title </h1>
+            <p> paragraf </p>
+            <div class="img_right"></div>
+        </section>
+        <section class="2">
+            <h1> title </h1>
+            <p> paragraf </p>
+            <div class="img_left"></div>
+        </section>
+        <section class="3">
+            <h1> title </h1>
+            <p> paragraf </p>
+            <div class="img_right"></div>
+        </section>
+        <section class="4">
+            <h1> title </h1>
+            <p> paragraf </p>
+            <div class="img_left"></div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://www.instagram.com/_augusto_11/"><img src="../img/instagram.png" alt=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
