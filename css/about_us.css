@@ -1,0 +1,80 @@
+html,body{
+    height: 99%;
+}
+
+.content{
+    height: 100%;
+    padding-bottom: 10%;
+}
+
+.text{
+    padding-top: 13%;
+    margin-left: 10%;
+}
+
+section{
+    padding: 3%;
+    padding-top: 5%;
+
+    height: 60%;
+
+    font-size: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#left{
+    background-image: url('../img/about us/left_bg.svg');
+    background-size: cover;
+    
+}
+
+#right img, #left .text{
+    grid-column: 2;
+    grid-row: 1;
+}
+#right .text, #left img{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+img{
+    height: 500px;
+}
+.whatWeOffer img{
+    margin-left: 30%;
+}
+.WhyChooseUs img{
+    height: 400px;
+}
+
+
+@media only screen and (max-width: 600px){
+    section{
+        height: 30%;
+    }
+    .content{
+        margin-top: 15%;
+        height: 89%;
+        padding-bottom: 0;
+    }
+    section img{
+        height: 70%;
+        margin-top: 10%;
+    }
+    .WhyChooseUs img{
+        height: 100px;
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+    .hoWeAre .text{
+        margin-top: 15%;
+    }
+
+    section .text{
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 414px){
+}

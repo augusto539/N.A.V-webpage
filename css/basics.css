@@ -6,4 +6,9 @@ html, body{
 
     font-family: 'Bebas Neue', cursive;
 
+    overflow-x: hidden; 
+}
+
+.content{
+    margin-top: 5%;
 }
