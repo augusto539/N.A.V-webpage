@@ -65,6 +65,12 @@ img{
         margin-top: 30%;
         margin-left: 10%;
     }
+    .OurCommitment img{
+        height: 15%;
+    }
+    .OurCommitment .text{
+        height: 20%;
+    }
     .hoWeAre .text{
         margin-top: 15%;
     }
