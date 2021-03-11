@@ -24,9 +24,7 @@ section{
     grid-template-columns: repeat(2, 1fr);
 }
 #left{
-    background-image: url('../img/about us/left_bg.svg');
-    background-size: cover;
-    
+    background-color: #e3f3ff;
 }
 
 #right img, #left .text{
@@ -45,7 +43,7 @@ img{
     margin-left: 30%;
 }
 .WhyChooseUs img{
-    height: 400px;
+    margin-left: 10%;
 }
 
 

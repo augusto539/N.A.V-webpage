@@ -5,6 +5,7 @@ body{
 
 
 .content{
+    margin-top: 5.5%;
     height: 80%;
     width: auto;
     position: relative;
@@ -89,6 +90,8 @@ body{
     border: none;
     background: none;
     outline: none;
+
+    transition: 0.5s;
 }
 
 .wallets_list .active, .wallets_list button:hover, .wallets_list button:focus{
