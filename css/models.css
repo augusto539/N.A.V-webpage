@@ -157,9 +157,32 @@ polyline {
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
     column-gap: 1%;
     row-gap: 3%;
+}
+
+.content_3{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.content_3 .header{
+    text-align: center;
+    font-size: 2rem;
+}
+.content_3 .contatc_links{
+    margin-top: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.contatc_links a{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    font-weight:normal;
+    color: black;
 }
 
 
@@ -235,8 +258,28 @@ polyline {
     .content_2{
 
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(8,1fr);
+        grid-template-rows: repeat(6,1fr);
         row-gap: 1%;
+    }
+
+    .content_3{
+        margin: 2%;
+        margin-top: 30%;
+        margin-bottom: 5%;
+    }
+
+    .content_3 .header{
+        font-size: 1rem;
+    }
+
+    .contatc_links img{
+        height: 30%;
+    }
+    .contatc_links .e-mail{
+        font-size: 0.9rem;
+    }
+    .contatc_links .e-mail h3{
+        margin-top: 15%;
     }
     
 }

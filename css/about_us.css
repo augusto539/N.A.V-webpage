@@ -8,8 +8,12 @@ html,body{
 }
 
 .text{
-    padding-top: 13%;
-    margin-left: 10%;
+    padding-top: 15%;
+    margin-left: 15%;
+    z-index: 2;
+}
+.text p{
+    width: 70%;
 }
 
 section{
@@ -25,15 +29,31 @@ section{
 }
 #left{
     background-color: #e3f3ff;
+    z-index: -1;
 }
 
-#right img, #left .text{
+#right img, #left .text, #left svg{
     grid-column: 2;
     grid-row: 1;
 }
-#right .text, #left img{
+#right .text, #left img, #right svg{
     grid-column: 1;
     grid-row: 1;
+}
+svg{
+    position: relative;
+    z-index: 1;
+    height: 110%;
+}
+.hoWeAre svg{
+    right: 45%;
+    top: -10%;
+    height: 125%;
+}
+.whatWeOffer svg{
+    right: 43%;
+    top: -20%;
+    height: 145%;
 }
 
 img{
