@@ -1,5 +1,5 @@
 body{
-    background-image: url('../img/models/models_bg.svg');
+    background-image: url('../images/models/models_bg.svg');
     background-size: cover;
 }
 
@@ -286,7 +286,7 @@ polyline {
 
 @media only screen and (max-width: 414px){
     body{
-        background-image: url('../img/models/models_bg_cel_414.svg');
+        background-image: url('../images/models/models_bg_cel_414.svg');
     }
 
     .content_2{
@@ -295,6 +295,6 @@ polyline {
 }
 @media only screen and (max-width: 375px){
     body{
-        background-image: url('../img/models/models_bg_cel_375.svg');
+        background-image: url('../images/models/models_bg_cel_375.svg');
     }
 }
