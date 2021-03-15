@@ -9,6 +9,18 @@ let one_less=0;
 let one_more=0;
 
 
+let info= [
+            {'h1':'bananas','p':'billetera llena de potacio','cards':4,'original':true},
+            {'h1':'la gran ola','p':'Impresión xilográfica echa por Katsushika Hokusai','cards':4,'original':false},
+            {'h1':'La Nascita di Venere','p':'pintura realizada por Sandro Botticelli','cards':4,'original':false},
+            {'h1':'leaves 1','p':'grupo de arbusto insulsos','cards':4,'original':true},
+            {'h1':'ocean keepers','p':'orca en el agua ( quizas en un oceano )','cards':4,'original':true},
+            {'h1':'rosas','p':'un grupo de ramas y flores espinosas','cards':4,'original':true},
+            {'h1':'nachi','p':'patron geometrico blanco sobre un fondo amarillo','cards':4,'original':true},
+            {'h1':'tbhc','p':'casi perfecto','cards':4,'original':false},
+          ];
+
+
 function buttons(button_type){
 
   if (button_type == 'left-arrow'){
@@ -18,7 +30,7 @@ function buttons(button_type){
     if (one_less == 0){
       one_less = ids[ids.length - 1]
     }
-    myMove(one_less)
+    animation(one_less)
   }
 
   if (button_type == 'right-arrow'){
@@ -28,13 +40,13 @@ function buttons(button_type){
     if (one_more == 9){
       one_more = ids[0]
     }
-    myMove(one_more)
+    animation(one_more)
   }
 }
 
 
 
-function myMove(ID) {
+function animation(ID) {
 
   ids = [1,2,3,4,5,6,7,8];
   var elem = document.getElementById("featured_wallet"); 
@@ -63,7 +75,7 @@ function myMove(ID) {
     }
   }
 
-  setTimeout(() => { kk(ID); }, 500);
+  setTimeout(() => { second_animation(ID); }, 500);
   
   document.getElementById(ID).className = "active"
 
@@ -75,24 +87,41 @@ function myMove(ID) {
     }
   });
 }
+function second_animation(ID) {
 
+  re_rite(ID)
 
-
-function kk(ID) {
-    document.getElementById("main_img").src = `../images/models/mockuped_wallets/wallet_${ID}.png`
-
-    var elem = document.getElementById("featured_wallet");   
-    var pos = whidth;
-    clearInterval(id);
-    id = setInterval(frame, 1);
-    function frame() {
-        if (pos == 0) {
-        clearInterval(id);
-        } else {
-        pos = pos - velocity;  
-        elem.style.left = pos + 'px';
-        }
+  var elem = document.getElementById("featured_wallet");   
+  var pos = whidth;
+  clearInterval(id);
+  id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 0) {
+      clearInterval(id);
+    } else {
+      pos = pos - velocity;  
+      elem.style.left = pos + 'px';
     }
+  }
+}
+
+
+function re_rite(ID){
+  document.getElementById("main_img").src = `../images/models/mockuped_wallets/wallet_${ID}.png`
+
+
+  document.getElementById('featured_wallet_h1').innerHTML = info[ID-1].h1;
+  document.getElementById('featured_wallet_p').innerHTML = info[ID-1].p;
+
+  if (info[ID-1].original == false) {
+    document.getElementById('original').style.display = 'none';
+
+    document.getElementById('cards').style.marginLeft = '50%'
+
+  } else {
+    document.getElementById('original').style.display = 'block';
+    document.getElementById('cards').style.marginLeft = '0%'
+  }
 }
 
 

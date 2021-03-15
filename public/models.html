@@ -58,14 +58,14 @@
         <div class="featured_wallet" id="featured_wallet">
             <img src="../images/models/mockuped_wallets/wallet_1.png" alt="this is a wallet" id="main_img">
             <div class="text">
-                <h1> National Post Ofice </h1>
-                <p> esta increible billetera esta inspirada en las cartas <br> utilisadas en el servicio postal de EEUU </p>
+                <h1 id="featured_wallet_h1"> National Post Ofice </h1>
+                <p id="featured_wallet_p"> esta increible billetera esta inspirada en las cartas <br> utilisadas en el servicio postal de EEUU </p>
                 <div class="interesting_data">
-                    <div class="card_slots">
+                    <div class="card_slots" id="cards">
                         <img src="../images/models/card.png" alt="">
                         <h2> four card slots </h2>
                     </div>
-                    <div class="nav_original">
+                    <div class="nav_original" id="original">
                         <img src="../images/models/cabeza negra.png" alt="">
                         <h2> NAV original </h2>
                     </div>
@@ -79,14 +79,14 @@
             </svg>
         </button>
         <div class="wallets_list">
-            <button type="button" id="1" onclick="myMove(id)"> <img src="../images/models/mockuped_wallets/wallet_1.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="2" onclick="myMove(id)"> <img src="../images/models/mockuped_wallets/wallet_2.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="3" onclick="myMove(id)"> <img src="../images/models/mockuped_wallets/wallet_3.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="4" onclick="myMove(id)"> <img src="../images/models/mockuped_wallets/wallet_4.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="5" onclick="myMove(id)"> <img src="../images/models/mockuped_wallets/wallet_5.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="6" onclick="myMove(id)"> <img src="../images/models/mockuped_wallets/wallet_6.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="7" onclick="myMove(id)"> <img src="../images/models/mockuped_wallets/wallet_7.png" alt="" class="wallets_list_img"> </button>
-            <button type="button" id="8" onclick="myMove(id)"> <img src="../images/models/mockuped_wallets/wallet_8.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="1" onclick="animation(id)"> <img src="../images/models/mockuped_wallets/wallet_1.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="2" onclick="animation(id)"> <img src="../images/models/mockuped_wallets/wallet_2.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="3" onclick="animation(id)"> <img src="../images/models/mockuped_wallets/wallet_3.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="4" onclick="animation(id)"> <img src="../images/models/mockuped_wallets/wallet_4.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="5" onclick="animation(id)"> <img src="../images/models/mockuped_wallets/wallet_5.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="6" onclick="animation(id)"> <img src="../images/models/mockuped_wallets/wallet_6.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="7" onclick="animation(id)"> <img src="../images/models/mockuped_wallets/wallet_7.png" alt="" class="wallets_list_img"> </button>
+            <button type="button" id="8" onclick="animation(id)"> <img src="../images/models/mockuped_wallets/wallet_8.png" alt="" class="wallets_list_img"> </button>
         </div>
     </div>
     <div class="content_2">
@@ -316,6 +316,6 @@
 </body>
 <script>
     let ramdom = Math.floor((Math.random() * (8 - 1 + 1)) + 1);
-    window.onload = myMove(ramdom)
+    window.onload = animation(ramdom)
 </script>
 </html>
