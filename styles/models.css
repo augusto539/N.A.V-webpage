@@ -284,6 +284,12 @@ polyline {
     .contatc_links .e-mail h3{
         margin-top: 15%;
     }
+
+    .content_3 .contatc_links{
+        margin: 20%;
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
     
 }
 
