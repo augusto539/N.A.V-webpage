@@ -5,6 +5,7 @@ html,body{
 .content{
     height: 100%;
     padding-bottom: 10%;
+    color: white;
 }
 
 .text{
@@ -45,15 +46,30 @@ svg{
     z-index: 1;
     height: 110%;
 }
+
 .hoWeAre svg{
-    right: 45%;
-    top: -10%;
-    height: 125%;
+    right: 6%;
+    top: -35%;
+    height: 150%;
+    transform: rotate(90deg);
 }
 .whatWeOffer svg{
-    right: 43%;
-    top: -20%;
-    height: 145%;
+    right: 3%;
+    top: -30%;
+    height: 155%;
+}
+.WhyChooseUs svg{
+    height: 160%;
+    top: -25%;
+    right: 3%;
+}
+.OurCommitment{
+    overflow: hidden;
+}
+.OurCommitment svg{
+    height: 170%;
+    top: -32%;
+    right: 20%;
 }
 
 img{
@@ -97,6 +113,27 @@ img{
 
     section .text{
         font-size: 0.6rem;
+    }
+
+    .hoWeAre svg{
+        right: 25%;
+        top: -15%;
+        height: 130%;
+    }
+    .whatWeOffer svg{
+        right: 35%;
+        top: -19%;
+        height: 130%;
+    }
+    .WhyChooseUs svg{
+        height: 150%;
+        top: -20%;
+        right: 30%;
+    }
+    .OurCommitment svg{
+        height: 43%;
+        top: -9%;
+        right: 48%;
     }
 }
 
