@@ -306,4 +306,27 @@ polyline {
     body{
         background-image: url('../images/models/models_bg_cel_375.svg');
     }
+    .wallets_list img{
+        height: 60px;
+    }
+
+
+    .content_2{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,1fr);
+        row-gap: 1%;
+        margin: 0;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .card{
+        margin: 0;
+    }
+
+
+    .content_3 .contatc_links{
+        margin: 10%;
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
 }

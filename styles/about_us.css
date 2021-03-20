@@ -139,3 +139,36 @@ img{
 
 @media only screen and (max-width: 414px){
 }
+
+@media only screen and (max-width: 375px){
+    section img{
+        height: 60%;
+    }
+    .hoWeAre img{
+        margin-top: 25%;
+    }
+    .hoWeAre svg{
+        right: 50%;
+        top: -8%;
+        transform: rotate(180deg);
+    }
+    .whatWeOffer svg{
+        right: 45%;
+        top: -10%;
+        transform: rotate(90deg);
+    }
+    .whatWeOffer img{
+        height: 80%;
+        margin-left: 20%;
+    }
+    .WhyChooseUs svg{
+        top: -30%;
+        right: 60%;
+        transform: rotate(-90deg);
+    }
+    .OurCommitment svg{
+        top: -12%;
+        right: 83%;
+        transform: rotate(-30deg);
+    }
+}
