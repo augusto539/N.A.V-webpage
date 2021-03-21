@@ -334,3 +334,22 @@ polyline {
         margin-bottom: 0;
     }
 }
+
+
+@media only screen and (max-width: 343px){
+    .wallets_list img{
+        height: 50px;
+    }
+
+    .content_2{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(12,1fr);
+        row-gap: 1%;
+        margin-right: auto;
+        margin-left: 12%;
+    }
+
+    .content_3{
+        margin-top: 155%;
+    }
+}

@@ -63,3 +63,16 @@ nav ul li a:hover{
         padding: 0px;
     }
 }
+
+
+@media only screen and (max-width: 329px){
+    nav{
+        height: 60px;
+    }
+    nav ul{
+        margin-right: 15%;
+    }
+    nav img{
+        display: none;
+    }
+}

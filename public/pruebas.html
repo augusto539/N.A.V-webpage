@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/basics.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    
+    <!-- <script src="../scripts/models.js"></script> -->
+    <style>
+        input{
+            margin-top: 200px;
+        }
+    </style>
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+            console.log(image.src)
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"> <img src="../images/nav/cabeza blanca.png" alt="" class="logo"> </a>
+            <ul>
+                <li><a href="../index.html"> home </a></li>
+                <li><a href="models.html"> models </a></li>
+                <li><a href="about us.html"> about us </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <input type='file' onchange="loadFile(event)" />
+    <img id="output" width="200" />
+
+
+    <footer>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://www.instagram.com/nav.billeteras/"><img src="../images/footer/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
