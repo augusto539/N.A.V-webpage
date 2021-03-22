@@ -109,7 +109,7 @@ button {
     background: transparent;
     border: 0;
     outline:0;
-    z-index: 5;
+    z-index: 3;
 }
 
 svg {
@@ -117,7 +117,6 @@ svg {
 }
   
 .arrow {
-    z-index: 5;
     cursor: pointer;
     width: 70px;
     height: 90px;
@@ -158,7 +157,7 @@ polyline {
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
     column-gap: 1%;
     row-gap: 3%;
 }
@@ -262,7 +261,7 @@ polyline {
     .content_2{
 
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(6,1fr);
+        grid-template-rows: repeat(10,1fr);
         row-gap: 1%;
     }
 
@@ -317,7 +316,7 @@ polyline {
 
     .content_2{
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(6,1fr);
+        grid-template-rows: repeat(10,1fr);
         row-gap: 1%;
         margin: 0;
         margin-right: 2%;
@@ -343,7 +342,7 @@ polyline {
 
     .content_2{
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(12,1fr);
+        grid-template-rows: repeat(16,1fr);
         row-gap: 1%;
         margin-right: auto;
         margin-left: 12%;

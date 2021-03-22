@@ -10,14 +10,14 @@ let one_more=0;
 
 
 let info= [
+            {'h1':'billetera Bowie','p':'Who will love Aladdin Sane?','cards':4,'original':true},
+            {'h1':'Fire watch','p':'Fire watch','cards':4,'original':false},
+            {'h1':'Mapa planisferio','p':'Si, esta "al revés"','cards':4,'original':true},
+            {'h1':'1976','p':'1976','cards':4,'original':true},
             {'h1':'bananas','p':'billetera llena de potacio','cards':4,'original':true},
             {'h1':'la gran ola','p':'Impresión xilográfica echa por Katsushika Hokusai','cards':4,'original':false},
             {'h1':'La Nascita di Venere','p':'pintura realizada por Sandro Botticelli','cards':4,'original':false},
             {'h1':'leaves 1','p':'grupo de arbusto insulsos','cards':4,'original':true},
-            {'h1':'ocean keepers','p':'orca en el agua ( quizas en un oceano )','cards':4,'original':true},
-            {'h1':'rosas','p':'un grupo de ramas y flores espinosas','cards':4,'original':true},
-            {'h1':'nachi','p':'patron geometrico blanco sobre un fondo amarillo','cards':4,'original':true},
-            {'h1':'tbhc','p':'casi perfecto','cards':4,'original':false},
           ];
 
 
